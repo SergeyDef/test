@@ -1,0 +1,56 @@
+
+@mixin button($width, $height, $backgroundColor) {
+  width: $width;
+  height: $height;
+  outline: none;
+  display: flex;
+  outline: none;
+  box-shadow: none;
+  justify-content: space-evenly;
+  background-color: $backgroundColor;
+}
+@mixin input($width, $height, $fontSize){
+  width: $width;
+  height: $height;
+  outline: none;
+  box-shadow: none;
+  font-size: $fontSize;
+  border: solid 1px #000;
+  color: #000;
+}
+@mixin close($left, $top){
+  cursor: pointer;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: $left;
+  top: $top;
+  background-color: fff;
+  border-radius: 20px;
+  border: solid 1px #000;
+}
+@mixin cross(){
+  transform: rotate(45deg);
+  position: relative;
+  width: 19px;
+  height: 2px;
+  background-color: #000;
+  left: 4px;
+  top: 14px;
+}
+@mixin crossAfter(){
+  content: "";
+  position: absolute;
+  background-color: #000;
+  width: 2px;
+  height: 19px;
+  left: 8px;
+  top: -8px;
+}
+@mixin buttonIndicator($backgroundColor){
+  width: 12px;
+  height: 12px;
+  margin: auto 0;
+  border-radius: 20px;
+  background-color: $backgroundColor;
+}

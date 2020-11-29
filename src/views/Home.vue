@@ -1,18 +1,37 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container-fluid wrapper">
+  	<Sidebar />
+  	<BlockСontent />
+  	<MessageToUser v-if="message" />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+ import Sidebar from '@/components/Sidebar.vue'
+ import BlockСontent from '@/components/BlockСontent.vue'
+ import MessageToUser from '@/components/MessageToUser.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+  	Sidebar,
+  	BlockСontent,
+  	MessageToUser,
+  },
+  computed: {
+  	message(){
+  		return this.$store.getters.showingMessage;
+  	}
   }
 }
 </script>
+<style lang="scss">
+	@import '@/scss/style.scss';
+
+	.wrapper{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		background-color: #F9F9FA;
+	}
+</style>
