@@ -107,13 +107,27 @@ export default {
     }
   }
 }
+@media (max-width: 510px){
+  .search{
+    &__form{
+      height: 40px;
+    }
+    &__button-indicator{
+    }
+  }
+}
 @media (max-width: 410px){
   .search{
+    &__form{
+      height: 40px;
+    }
     &__input{
       width: 70%;
+      height: 40px;
     }
     &__button{
       width: 30%;
+      height: 40px;
     }
     &__button-indicator{
     }

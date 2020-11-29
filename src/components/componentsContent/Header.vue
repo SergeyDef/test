@@ -58,9 +58,14 @@ export default {
 		}
 	}
 } 
+@media (max-width: 560px){
+	.header{
+		height: 80px;
+	}
+}
 @media (max-width: 460px){
 	.header{
-		height: 10%;
+		height: 80px;
 
 		&__adaptive_menu{
 			

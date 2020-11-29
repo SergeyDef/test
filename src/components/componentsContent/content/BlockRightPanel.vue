@@ -10,7 +10,7 @@
   		<div class="info__title"><span>Клиенты</span></div>
   		<div class="info__data"><span>{{ clients + " шт" }}</span></div>
   	</div>
-  	<div class="interface__info mt-3"></div>
+  	<!-- <div class="interface__info mt-3"></div> -->
   </div>
 </template>
 
@@ -141,6 +141,7 @@ export default {
     		height: 50%;
 		}
 		&__info{
+			height: 110px;
 		}
 		.info{
 			flex-direction: row;
@@ -151,12 +152,14 @@ export default {
 			}
 			&__title>span{
 				margin: auto;
+				font-size: 1.8rem;
 			}
 			&__data{
 				width: 50%;
 				height: 100%;
 			}
 			&__data>span{
+				font-size: 2.2rem;
 				margin: auto;
 			}
 		}
@@ -169,9 +172,31 @@ export default {
 		}
 		&__details>button{
 			width: 100%;
-    		height: 90%;
+    		height: 50px;
 		}
 		&__info{
+		}
+	}
+}
+@media (max-width: 360px){
+	.interface{
+
+		&__details>button{
+		}
+		&__info{
+		}
+		.info{
+
+			&__title{
+			}
+			&__title>span{
+				font-size: 1.2rem;
+			}
+			&__data{
+			}
+			&__data>span{
+				font-size: 1.7rem;
+			}
 		}
 	}
 }
