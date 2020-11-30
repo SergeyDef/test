@@ -133,6 +133,16 @@ export default {
 		}
 	}
 }
+@media (max-width: 960px){
+	.interface{
+		height: 400px;
+		
+		&__details>button{
+		}
+		&__info{
+		}
+	}
+}
 @media (max-width: 667px){
 		.interface{
 

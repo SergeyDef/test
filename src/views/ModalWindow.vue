@@ -168,12 +168,21 @@ export default {
       }
     }
   }
-  @media (max-width: 1140px){}
+  @media (max-width: 1140px){
+    .modal{
+      overflow: auto;
+      &__block{
+      }
+      &__block>form{
+      }
+    }
+  }
   @media (max-width: 967px){
     .modal{
 
       &__block{
         width: 88%;
+        height: 300px;
       }
       &__block>form{
         width: 68%;

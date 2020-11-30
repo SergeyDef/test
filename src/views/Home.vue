@@ -29,9 +29,19 @@ export default {
 	@import '@/scss/style.scss';
 
 	.wrapper{
+    overflow: auto;
 		width: 100%;
 		height: 100%;
 		display: flex;
 		background-color: #F9F9FA;
 	}
+  @media (max-width: 967px){
+    .wrapper{
+      overflow: auto;
+      width: 100%;
+      height: 900px;
+      display: flex;
+      background-color: #F9F9FA;
+    }
+  }
 </style>

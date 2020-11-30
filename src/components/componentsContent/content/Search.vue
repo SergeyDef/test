@@ -97,13 +97,15 @@ export default {
 @media (max-width: 967px){
   .search{
     &__form{
-      height: 62%;
+      height: 40%;
     }
     &__input{
       width: 70%;
+      height: 40px;
     }
     &__button{
       width: 30%;
+      height: 40px;
     }
   }
 }

@@ -33,6 +33,11 @@ export default {
 		height: 7%;
 	}
 }
+@media (max-width: 967px){
+	.header{
+		height: 80px;
+	}
+}
 @media (max-width: 667px){
 	.header{
 		position: relative;
@@ -41,14 +46,14 @@ export default {
 			display: flex;
 			justify-content: space-evenly;
 			flex-direction: column;
-			position: fixed;
+			position: absolute;
 			background-color: #1E2933;
 			width: 50px;
 			height: 50px;
 			padding: 2px;
 			border-radius: 10px;
 			left: 7%;
-			top: 2%;
+			top: 20%;
 		}
 		&__adaptive_menu>span{
 			width: 70%;

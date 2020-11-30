@@ -51,6 +51,7 @@ export default {
 	width: 70%;
 	height: 100%;
 	display: flex;
+  position: relative;
 	flex-direction: column;
 
   ::-webkit-scrollbar { 
@@ -82,7 +83,6 @@ export default {
   width: 90%;
   height: 70%;
   margin: 0 auto; 
-  position: relative;
   justify-content: space-between;
   overflow: auto;
 
@@ -90,7 +90,7 @@ export default {
     z-index: 999;
     width: 180px;
     height: 40px;
-    position: fixed;
+    position: absolute;
   }
   &__get>button{
     @include button(100%, 100%, #6672FB);
@@ -106,6 +106,18 @@ export default {
     margin: 2% auto;
     height: 75%;
     padding-top: 2%;
+    &__get{
+
+    }
+    &__get>button{
+
+    }
+   }
+ }
+ @media (max-width: 960px){
+  .wrapper{
+  }
+  .list{
     &__get{
 
     }
